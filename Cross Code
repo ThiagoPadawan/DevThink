@@ -1,0 +1,68 @@
+# Programação.
+> * O Processo de criar algoritmos serve para estruturar o que vai ser programado, serve para qualquer linguagem de programação.
+> * O principio "Entrada > Processo > Saída" serve para qualquer linguagem de programação.
+> * A existência de _variáveis_ como "lugar" que guarda informação. É comum a todas as linguagens de programação.
+
+## Linguagens de Programação Comparadas
+**Atribuição de Variáveis**
+* Todas as linguagens tem suas próprias regras sobre o nome das variáveis, a sintaxe correta para declará-la e a forma correta para atribuir valor às variáveis. Tem regras quase universais (presente em quase todas as linguagens de programação) como por exemplo usar o sinal de _igual (=)_ como operador de atribuição. Mas existem peculiaridades que fazem toda a diferença para que o código funcione e/ou para facilitar o entendimento e a manutenção do código. Ou seja, seguir as orientações de "boas práticas".
+
+### C
+
+`int nomedavariavel; //declaração de variável (sem valor).`
+`int nomedavariavel = 123; //valor atribuido à variável.`
+
+**Peculiaridades**
+* Ao declarar variáveis deve-se, sempre, declarar seu tipo (**int, char, float, bool, double**) e considerar seu tamanho (em bytes, bits , ou índices).
+* Não nome da variável não pode começar com caracteres numéricos.
+* O sinal de _igual (=)_ é o operador de atribuição. O que está "à direita" do igual é atribuído ao que está "à esquerda" do igual.
+* O C é uma linguagem de sintaxe "dura".
+* É considerado "boa prática", atribuir valor às variáveis no momento em que são declaradas para evitar "contaminação pelo lixo de memória".
+
+### PHP
+
+`$nomedavariavel; // declaração de variável (sem valor)`
+`$nomedavariavel = 123; // valor atribído à variável.`
+
+**Peculiaridades**
+* Absolutamente todas as variáveis no PHP devem começar com o caracter _cifrão ($)_.
+* Não precisa declarar nem o tipo nem o tamanho, isso é entendido automaticamente ao executar o código.
+* Não precisa se preocupar com o lixo de memória, ao declarar uma variável, ao executar o código, o espaço de memória reservado para a variável é "zerado" automaticamente.
+* O sinal de _igual (=)_ é o operador de atribuição. O que está "à direita" do igual é atribuído ao que está "à esquerda" do igual.
+* Sintaxe um pouco mais "maleável".
+
+### JavaScript
+
+`var nomedavariavel; // declaração de variável (sem valor)`
+
+> Depois que uma variável está declarada, sempre que usar o nome dela, o programa entenderá que se refere à variável.
+> Isso permite o seguinte dormato para a atribuição de valor.
+
+`var nome; // declaração de variável (sem valor).`
+`nome = "Maria"; // valor atribído à variável.`
+
+> Além do formato de atribuição já esperado:
+
+`var nome = "Maria"; // valor atribído à variável.`
+
+**Peculiaridades**
+* Declaração se faz a partir do operador `var`.
+* Não precisa declarar nem o tipo nem o tamanho, isso é entendido automaticamente ao executar o código.
+* Não precisa se preocupar com o lixo de memória, ao declarar uma variável, ao executar o código, o espaço de memória reservado para a variável é "zerado" automaticamente.
+* O sinal de _igual (=)_ é o operador de atribuição. O que está "à direita" do igual é atribuído ao que está "à esquerda" do igual.
+* No JavaScript as coisas costumam funcionar mesmo sem o _ponto-e-vírgula (;)_, porém ele *é obrigatório!*, pois quando não tem, ele é colocado de forma automática em tempo de execução. Funciona como um "corretor ortográfico", porém assim como os corretores ortográficos de texto natural, às vezes pode gerar resultados inesperados.
+
+### Python
+
+`nomedavariavel = None // declaração de variável (sem valor).`
+`nomedavariavel: str // declaração de variável (sem valor), outra forma.`
+`nomedavariavel = "" // declaração de variável (sem valor), outra forma.`
+
+`nomedavariavel = 123 // valor atribído à variável.`
+
+**Peculiaridades**
+* Absolutamente sempre o nome das variáveis devem começar com letra minuscula.
+* Não precisa declarar nem o tipo nem o tamanho.
+* Não precisa se preocupar com o lixo de memória, ao declarar uma variável, ao executar o código, o espaço de memória reservado para a variável é "zerado" automaticamente.
+* Declarar uma variável sem valor... Pra quê? Só se declaram quando fazem sentido para tornar o código mais legível pelas pessoas ou por uma necessidade conceitual do paradigma ou da abordagem técnica utilizada.
+* O uso de _ponto-e-vírgula (:)_ não atrapalha em nada, porém é desnecessário e **não usar** é considerado uma boa prática. Basicamente só existe uma situação em que é necessário e obrigatório. Quando são escritas várias instruções na mesma linha, então as instruções devem ser separadas por _ponto-e-vírgula (;)_. Porém isso vai contra as orientações de "boa prática".
